@@ -75,7 +75,7 @@
 </script>
 
 <template>
-  <Layout>
+  <Layout @changeDisplay="handleChangeDisplay">
     <!-- page1 -->
     <Welcome v-if="selectedDisplay == 1" :handleChangeDisplay="handleChangeDisplay" />
     <!-- page2 -->

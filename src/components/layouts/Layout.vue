@@ -1,10 +1,10 @@
 <script setup>
-
+  const $emit = defineEmits(['changeDisplay']);
 </script>
 
 <template>
   <header>
-    <h1 class="text-gradient">
+    <h1 class="text-gradient" @click="$emit('changeDisplay', 1)">
       Gym8Gram
     </h1>
   </header>
